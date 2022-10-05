@@ -20,7 +20,7 @@ struct OnboardingView: View {
             }//:LOOP
         }//: TAB
         .tabViewStyle(PageTabViewStyle())
-        .padding(.vertical, 16) 
+        .padding(.vertical, 16)  
         
     }
 }
