@@ -26,6 +26,8 @@ struct FruitDetailView: View {
                             .font(.largeTitle)
                             .fontWeight(.heavy)
                             .foregroundColor(fruit.gradientColors[1])
+                            .multilineTextAlignment(.leading)
+                            
                         
                         // HEADLINE
                         Text(fruit.headline)
@@ -33,6 +35,7 @@ struct FruitDetailView: View {
                             .multilineTextAlignment(.leading)
                         
                         // NUTRIENTS
+                        FruitNutrientsView(fruit: fruit)
                         
                         // SUBHEADLINE
                         Text("learn more about\(fruit.title)".uppercased())
@@ -49,6 +52,7 @@ struct FruitDetailView: View {
                     }//: VSTACK
                     .padding(.horizontal, 20)
                     .frame(maxWidth: 640, alignment: .center)
+                    
                 }//: VSTACK
                 .navigationBarTitle(fruit.title, displayMode: .inline)
                 .navigationBarHidden(true)
