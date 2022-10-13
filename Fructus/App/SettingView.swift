@@ -36,6 +36,21 @@ struct SettingView: View {
                     // MARK: - SECTION 2
                     
                     // MARK: - SECTION 3
+                    
+                GroupBox(
+                label: SettinsLabelView(labelText: "Aplication", labelImage: "apps.iphone")
+                ){
+                    SettingRowView(name: "Developer", content: "Baris Ciftci")
+                    SettingRowView(name: "Designer", content: "Baris Ciftci")
+                    SettingRowView(name: "Compatibility", content: "IOS 16")
+                    SettingRowView(name: "Year", content: "2022")
+                    SettingRowView(name: "Website", linkLabel: "ENB Creative", linkDestination: "enbcreative.com")
+                    SettingRowView(name: "Instagram", linkLabel: "@enbcreative", linkDestination: "instagram.com/enbcreative")
+                    
+                    
+                    
+                }
+                    
                 }//: VSTACK
                 .navigationBarTitle(Text("Settings"), displayMode: .large)
                 .navigationBarItems(
